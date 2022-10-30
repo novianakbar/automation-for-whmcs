@@ -80,7 +80,7 @@ function mikhmonOnline_CreateAccount($params) {
       $result = end($output);
 
     #create dns record
-    if ($getdomain == "apptunnel.my.id") {
+    if ($getdomain == "domain1") {
      $data = array(
         'type' => 'A',
         'name' => $getsubdomain,
@@ -101,7 +101,7 @@ function mikhmonOnline_CreateAccount($params) {
       } else {
         return $result['errors'][0]['message'];
       }
-    } elseif ($getdomain == "infinits.eu.org") {
+    } elseif ($getdomain == "domain2") {
       $data = array(
           'type' => 'A',
           'name' => $getsubdomain,
